@@ -1,0 +1,24 @@
+// modulus operator to determine if a number is odd or even. 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int number;
+
+	cout << "Enter an integer and i will tell you if it\n";
+	cout << "is odd or even. ";
+	cin >> number;
+	if (number % 2 == 0)
+	{
+		cout << endl << number << " is even.\n\n";
+	}
+	else
+	{
+		cout << endl << number << " is odd.\n\n";
+	}
+	cout << "press enter to end program\n";
+	cin.get();
+	cin.ignore();
+	return 0;
+}
