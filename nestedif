@@ -1,0 +1,62 @@
+#include <iostream> // this includes input output stream header
+#include <iomanip>	// this includes header to allow formating on cout and cin
+using namespace std;
+
+int main()
+{
+	double testScore1, testScore2, testScore3, testAverage; // declare variables here
+
+	cout << "Please enter your first test score: " << endl; // prompts user for input
+	cin >> testScore1;										// input 
+	if (testScore1 >= 90)									// beginning of series of 
+		cout << "You got an A, congratulations!" << endl;	// nested if statements 
+	else
+		if (testScore1 >= 80)
+			cout << "You got a B." << endl;
+		else
+			if (testScore1 >= 70)
+				cout << "You got a C" << endl;
+			else
+				if (testScore1 >= 60)
+					cout << "You got a D." << endl;
+				else
+					cout << "You got an F." << endl;
+	cout << "\nPlease enter your second test score: " << endl;// same thing
+	cin >> testScore2;
+	if (testScore2 >= 90)
+		cout << "You got an A, congratulations!" << endl;
+	else
+		if (testScore2 >= 80)
+			cout << "You got a B." << endl;
+		else
+			if (testScore2 >= 70)
+				cout << "You got a C" << endl;
+			else
+				if (testScore2 >= 60)
+					cout << "You got a D." << endl;
+				else
+					cout << "You got an F." << endl;
+	cout << "\nPlease enter your third test score: " << endl;//same thing
+	cin >> testScore3;
+	if (testScore3 >= 90)
+		cout << "You got an A, congratulations!" << endl;
+	else
+		if (testScore3 >= 80)
+			cout << "You got a B." << endl;
+		else
+			if (testScore3 >= 70)
+				cout << "You got a C" << endl;
+			else
+				if (testScore3 >= 60)
+					cout << "You got a D." << endl;
+				else
+					cout << "You got an F." << endl;
+	testAverage = (testScore1 + testScore2 + testScore3) / 3;	 // averages tests
+	cout << setprecision(4);					//this formats output's decimal places
+	cout << "\nYour test score average is: \n";				// displays average
+	cout << testAverage << "%" << endl; 
+	cout << "\nPress enter to quit program" << endl;		// prompts user for input to
+	cin.get();												// quit the program
+	cin.ignore();	//this ignores characters in keyboard buffer.
+	return 0;		// ends function
+}
