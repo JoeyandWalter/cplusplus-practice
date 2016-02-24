@@ -11,13 +11,13 @@ int main()
 	double charges;				// Monthly charges
 
 	const double ADULT = 40.0,	// Constants for pay rate
-			CHILD = 20.0, 
-			SENIOR = 30.0;
+		CHILD = 20.0, 
+		SENIOR = 30.0;
 
 	const int ADULT_CHOICE = 1, // Menu choices
-			CHILD_CHOICE = 2, 
-			SENIOR_CHOICE = 3, 
-			QUIT_CHOICE = 4;	
+		CHILD_CHOICE = 2, 
+		SENIOR_CHOICE = 3, 
+		QUIT_CHOICE = 4;	
 
 	char answer;				// stores answer to additional question
 	
