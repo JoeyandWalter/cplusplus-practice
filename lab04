@@ -22,11 +22,11 @@ int main()
 	char answer;				// stores answer to additional question
 	
 	cout << "\t\tHealth Club Membership Menu\n\n" // Displays menu choices
-	     << "1. Standard Adult Membership\n"
-		 << "2. Child Membership\n"
-		 << "3. Senior Citizen Membership\n"
-		 << "4. Quit the Program\n\n"
-		 << "Enter your choice: ";
+		<< "1. Standard Adult Membership\n"
+		<< "2. Child Membership\n"
+		<< "3. Senior Citizen Membership\n"
+		<< "4. Quit the Program\n\n"
+		<< "Enter your choice: ";
 	cin >> choice;
 
 	cout << fixed << showpoint << setprecision(2);	// formats output
