@@ -73,7 +73,7 @@ int main()
 			case 'y':
 				cout << "That is nice!\n";
 				break;
-			case 'N':							// fall throughr
+			case 'N':							// fall through
 			case 'n':
 				cout << "Maybe next time.\n";
 				break;
