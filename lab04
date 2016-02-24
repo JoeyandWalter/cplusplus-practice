@@ -18,6 +18,7 @@ int main()
 			  CHILD_CHOICE = 2,
 			  SENIOR_CHOICE = 3,
 		 	  QUIT_CHOICE = 4;
+		 	  
 	char answer;				// stores answer to additional question
 	
 	cout << "\t\tHealth Club Membership Menu\n\n" // Displays menu choices
