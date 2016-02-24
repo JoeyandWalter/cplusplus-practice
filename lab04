@@ -6,22 +6,22 @@ using namespace std;
 
 int main()
 {
-	int choice, months;			// menu choice and number of months
+	int choice, months;		// menu choice and number of months
 
-	double charges;				// Monthly charges
+	double charges;			// Monthly charges
 
 	const double ADULT = 40.0,	// Constants for pay rate
 		CHILD = 20.0, 
 		SENIOR = 30.0;
 
-	const int ADULT_CHOICE = 1, // Menu choices
+	const int ADULT_CHOICE = 1, 	// Menu choices
 		CHILD_CHOICE = 2, 
 		SENIOR_CHOICE = 3, 
 		QUIT_CHOICE = 4;	
 
-	char answer;				// stores answer to additional question
+	char answer;			// stores answer to additional question
 	
-	cout << "\t\tHealth Club Membership Menu\n\n" // Displays menu choices
+	cout << "\t\tHealth Club Membership Menu\n\n" 	// Displays menu choices
 		<< "1. Standard Adult Membership\n"
 		<< "2. Child Membership\n"
 		<< "3. Senior Citizen Membership\n"
@@ -70,15 +70,15 @@ int main()
 		cin >> answer;
 		switch (answer)
 		{
-			case 'Y':						// fall through
+			case 'Y':				// fall through
 			case 'y':
 				cout << "That is nice!\n";
 				break;
-			case 'N':						// fall through
+			case 'N':				// fall through
 			case 'n':
 				cout << "Maybe next time.\n";
 				break;
-			default:						// catches invalid input
+			default:				// catches invalid input
 				cout << "\ninvalid input\n";
 		}
 	}
