@@ -11,7 +11,7 @@ choice = input('Please select 1-5: ')
 
 while choice != '6':
 	if choice == '1':
-    mph = float(input('Please enter miles per hour to be converted:\n'))
+		mph = float(input('Please enter miles per hour to be converted:\n'))
 		kph = mph * 1.6
 		print('\nMPH\tKPH')
 		print(format(mph, '.2f'), '\t', format(kph, '.2f'))
@@ -33,7 +33,7 @@ while choice != '6':
 		kilograms = pounds * .45
 		print('\nPounds\tKilograms')
 		print(format(pounds, '.2f'), '\t', format(kilograms, '.2f'))
-		choice = input('\Make a new menu selection 1-6 or 0 for menu: ')
+		choice = input('\nMake a new menu selection 1-6 or 0 for menu: ')
 	elif choice == '5':
 		inches = float(input('Please enter inches to be converted:\n'))
 		centimeters = inches * 2.54
@@ -50,7 +50,7 @@ while choice != '6':
 		print('5. Inches to Centimeters')
 		print('6. Quit')
 		choice = input('\nPlease make a new menu selection 1-6: ')
-	elif choice !=6:
-		choice = input('\nMake a new menu selection 1-6 or 0 for menu: ')
-	else:
+	elif choice == 6:
 		print('Goodbye')
+	else:
+		choice = input('\nMake a new menu selection 1-6 or 0 for menu: ')
